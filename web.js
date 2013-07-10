@@ -1,6 +1,11 @@
 var fs = require('fs');
-var html_string = fs.readFileSync('index.html');
-console.log("html string is " + html_string);
+var html_string = fs.readFileSync('index.html','utf8');
+// console.log("html string is " + html_string);
+
+//var buffer = new Buffer(html_string, "utf-8");
+//buffer.write(html_string,"utf-8");
+//buffer.toString('utf-8');
+
 
 var express = require('express');
 
